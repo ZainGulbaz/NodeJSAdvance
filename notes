@@ -1,0 +1,26 @@
+Node JS Notes
+
+
+1-NVM (Node version Manager)
+nvm list
+nvm uninstall[node version]
+nvm use [node version]
+nvm alias default [node version]
+create .nvmrc and write node version in your project repository. The version should be same as terminal
+
+2-NODE JS under the hood
+processor can only understand machine code.
+above machine code we have assembly language
+above assembly language we have c/c++
+compiler converts c/c++ to assembly langauge and assembler convets that into machine code
+above c/c++ we have high level langauges like javascript/python
+we cannot control hardware directly with javascript/python
+
+3-Javascript Engine (Spider Monkey,v8)
+Node uses v8 engine
+ECMA script is javascript language specifications that help us to make a standard set of rules
+
+4-Thread Pools
+It has four threads by default
+We can increase the threads manually as well.
+FS in libuv uses these threads.
