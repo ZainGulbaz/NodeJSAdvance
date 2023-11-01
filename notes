@@ -24,3 +24,17 @@ ECMA script is javascript language specifications that help us to make a standar
 It has four threads by default
 We can increase the threads manually as well.
 FS in libuv uses these threads.
+
+5-Event Emitter
+It is only build in javascript without using any c++.
+It is only a design pattern.
+It is synchrounusily.
+The events are registered in an array and are looped to call the specific one.
+
+6-Buffers
+Characters set, every letter is reperesented by a number like unicode,ascii
+Character encoding is giving binary numbers to different characters, different sequence of bytes to differebt characters
+Buffer get some data and move to some where else.
+Buffer has a fixed size and contains only raw binary data.
+Buffer has a fixed size, it ignore data larger than its size.
+They are nor resizeable.
