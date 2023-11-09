@@ -12,6 +12,6 @@ console.log(buffer.toJSON());
 
 console.log("---------------------------");
 
-let buffer2=Buffer.from([1,2,3,4],"binary");
+let buffer2=Buffer.from([1,11,3,4],"binary");
 console.log(buffer2);
 console.log(buffer2.toString("hex"));
