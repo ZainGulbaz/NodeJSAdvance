@@ -1,1 +1,1 @@
-hello zain
+rename the file datass.txt to data.txt

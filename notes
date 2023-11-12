@@ -38,3 +38,9 @@ Buffer get some data and move to some where else.
 Buffer has a fixed size and contains only raw binary data.
 Buffer has a fixed size, it ignore data larger than its size.
 They are nor resizeable.
+
+7-File Systems
+using rm and unlink file systems we can delete multiple files and directories
+
+8-Streams
+

@@ -1,0 +1,12 @@
+{
+  "name": "Node JS Advance",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ZainGulbaz/NodeJSAdvance.git",
+  "author": "Zain Gulbaz <zaingulbaz8@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-console-colors": "^1.1.5",
+    "prompt-sync-history": "^1.0.1"
+  }
+}
