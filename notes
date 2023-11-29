@@ -1,14 +1,14 @@
-Node JS Notes
+##### Node JS Notes
 
 
-1-NVM (Node version Manager)
+### 1-NVM (Node version Manager)
 nvm list
 nvm uninstall[node version]
 nvm use [node version]
 nvm alias default [node version]
 create .nvmrc and write node version in your project repository. The version should be same as terminal
 
-2-NODE JS under the hood
+### 2-NODE JS under the hood
 processor can only understand machine code.
 above machine code we have assembly language
 above assembly language we have c/c++
@@ -16,22 +16,22 @@ compiler converts c/c++ to assembly langauge and assembler convets that into mac
 above c/c++ we have high level langauges like javascript/python
 we cannot control hardware directly with javascript/python
 
-3-Javascript Engine (Spider Monkey,v8)
+### 3-Javascript Engine (Spider Monkey,v8)
 Node uses v8 engine
 ECMA script is javascript language specifications that help us to make a standard set of rules
 
-4-Thread Pools
+### 4-Thread Pools
 It has four threads by default
 We can increase the threads manually as well.
 FS in libuv uses these threads.
 
-5-Event Emitter
+### 5-Event Emitter
 It is only build in javascript without using any c++.
 It is only a design pattern.
 It is synchrounusily.
 The events are registered in an array and are looped to call the specific one.
 
-6-Buffers
+### 6-Buffers
 Characters set, every letter is reperesented by a number like unicode,ascii
 Character encoding is giving binary numbers to different characters, different sequence of bytes to differebt characters
 Buffer get some data and move to some where else.
@@ -39,8 +39,32 @@ Buffer has a fixed size and contains only raw binary data.
 Buffer has a fixed size, it ignore data larger than its size.
 They are nor resizeable.
 
-7-File Systems
+### 7-File Systems
 using rm and unlink file systems we can delete multiple files and directories
 
-8-Streams
+### 8-Streams
+An interface that helps us to work with streaming data
 
+1-Memeory Efficiency                    2-Time Effeciency
+
+Data Flowing is called a stream
+## Copy Paste
+# 1-Load file into memory first and then to the hard drive
+# 2-Send them in the form of chunks (Saves a lot of memory)
+
+We write the data into the buffer and sends it once it is done.
+
+1-Wrtieable Stream (Response)                  2-Readable Stream (Request)
+
+Encryption millions of data.
+
+The writeable stream makes a buffer of specific bytes(16KB by default) and push the data in to that buffer and once the buffer is filled it push the data, we write in  the form of chunks to the buffer.
+
+If we write 800 MB of data 16KB data is filled into buffer while the other is loaded into the memory
+
+Draining-> when buffer empties it self.
+
+Once drained, we push more data into the buffer
+
+"writableLength" gives us the length of the stream buffer available
+"writableHighWaterMark" give us the total length of the stream which is 16KBs
